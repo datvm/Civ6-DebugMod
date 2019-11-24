@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="f961744c-68b4-411a-a805-811e2afc9d43" version="1.0">
+  <Properties>
+    <Name>A Debug Mod for Modders</Name>
+    <Description><![CDATA[This mod include popular "cheating" SQL codes for testing mods. I made this because while testing previous mod, I accidentally left the debug code in the published mod. With this mod, you do not have to worry about that. You can check debugmod.sql file to uncomment/comment options that you do/don't need. This mod database update has Load Order of 99999 so it should work for most mods if you are not setting something crazy.
+
+  If you think a helpful snippet should be added, feel free to create a pull request or issue on [url=https://github.com/datvm/Civ6-DebugMod]Github[/url].]]></Description>
+    <Authors>Luke Vo</Authors>
+    <CompatibleVersions>2.0</CompatibleVersions>
+    <Teaser>Debug mod for Modders</Teaser>
+  </Properties>
+  <InGameActions>
+    <UpdateDatabase id="DebugMod_Gameplay">
+      <Properties>
+        <LoadOrder>99999</LoadOrder>
+      </Properties>
+      <File>debugmod.sql</File>
+    </UpdateDatabase>
+  </InGameActions>
+  <Files>
+    <File>debugmod.sql</File>
+    <File>all-enabled.sql</File>
+    <File>all-disabled.sql</File>
+  </Files>
+</Mod>
